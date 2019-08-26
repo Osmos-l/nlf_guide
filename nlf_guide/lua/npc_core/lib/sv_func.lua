@@ -1,4 +1,26 @@
 /*
+	OsGuide:InitData
+*/
+function OsGuide:InitData()
+	print("init")
+	
+	if ( !file.Exists( "nlf", "DATA" ) ) then
+		file.CreateDir( "nlf" )
+		print("create file")
+	end
+
+	if ( !file.Exists( "nlf/givemoneyonetime", "DATA" ) ) then
+		file.CreateDir( "nlf/givemoneyonetime" )
+	end
+
+	if ( !file.Exists( "nlf/" .. string.lower( game.GetMap() ), "DATA" ) ) then
+		file.CreateDir( "nlf/" .. string.lower( game.GetMap() ) )
+	end
+
+
+end
+
+/*
 	OsGuide:SpawnNPC
 */
 function OsGuide:SpawnNPC()
