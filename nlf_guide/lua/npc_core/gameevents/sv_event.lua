@@ -1,5 +1,7 @@
 
 timer.Simple(1, function() -- Wait lib load before first launch
+	hook.Add("InitPostEntity", "OsGuide_SpawnNPC", OsGuide:InitData() )
+
 	hook.Add("InitPostEntity", "OsGuide_SpawnNPC", OsGuide:SpawnNPC() )
 	hook.Add("PostCleanupMap", "OsGuide_SpawnNPC", OsGuide:SpawnNPC() )
 end )
