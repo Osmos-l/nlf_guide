@@ -4,7 +4,7 @@ OsGuide = OsGuide or {
 						Lang = {},
 						Entity = {},
 						Path = "npc_core",
-						Version = "2.0"
+						Version = "3.0"
 					}
 
 -- REGISTER ACTION
